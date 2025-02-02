@@ -1,1 +1,1 @@
-# Registration-Form-with-PHP-JS
+# Registration-form-using-php-and-js

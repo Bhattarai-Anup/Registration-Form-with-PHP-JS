@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application 1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form method="POST" onsubmit="return validate()" action="form.php">
+        <!-- login box -->
+        <div class="login-box">
+            <!-- heading -->
+            <h1>KEC FORM</h1>
+            
+            <!-- name -->
+            <div class="name">
+                <label>Name :</label>
+                <input type="text" id="name" name="firstField" placeholder="Enter your Name">
+                <p id="error1"></p>
+            </div>
+            
+            <!-- phone number -->
+            <div class="phone">
+                <label>Phone :</label>
+                <input type="text" id="phone" name="secondField" placeholder="Enter your Phone number">
+                <p id="error2"></p>
+            </div>
+            
+            <!-- email -->
+            <div class="emaill">
+                <label>Email :</label>
+                <input type="email" id="email" name="thirdField" placeholder="Enter your Email">
+                <p id="error3"></p>
+            </div>
+            
+            <!-- gender -->
+            <div class="gender">
+                <fieldset class="gies">
+                    <legend>Gender</legend>
+                    <input type="radio" name="Gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="Gender" id="female" value="female"><label for="female">Female</label>
+                    <input type="radio" name="Gender" id="others" value="others"><label for="others">Others</label>
+                </fieldset>
+                <p id="error4"></p>
+            </div>
+            
+            <!-- address -->
+            <div class="address">
+                <label>Address :</label>
+                <input type="text" id="address" name="fifthField" placeholder="Enter your Address">
+                <p id="error5"></p>
+            </div>
+            
+            <!-- hobbies -->
+            <div class="hobbies">
+                <fieldset class="fies">
+                    <legend>Hobbies</legend>
+                    <input type="checkbox" name="hobs[]" id="reading" value="reading"><label for="reading">Reading</label>
+                    <input type="checkbox" name="hobs[]" id="singing" value="singing"><label for="singing">Singing</label>
+                    <input type="checkbox" name="hobs[]" id="poetry" value="poetry"><label for="poetry">Poetry</label>
+                    <input type="checkbox" name="hobs[]" id="football" value="football"><label for="football">Football</label>
+                </fieldset>
+                <p id="error6"></p>
+            </div>
+            
+            <!-- skills -->
+            <div class="skills">
+                <fieldset class="skl">
+                    <legend>Skills</legend>
+                    <input type="checkbox" name="skll[]" id="devops" value="DevOps"><label for="devops">DevOps</label>
+                    <input type="checkbox" name="skll[]" id="cloud" value="Cloud"><label for="cloud">Cloud</label>
+                    <input type="checkbox" name="skll[]" id="ml" value="ML"><label for="ml">ML</label>
+                    <input type="checkbox" name="skll[]" id="mern" value="MERN"><label for="mern">MERN</label>
+                </fieldset>
+                <p id="error7"></p>
+            </div>
+            
+            <!-- country -->
+            <div class="country">
+                <label>Country :</label>
+                <div class="newcount">
+                    <select id="countri" name="contree">
+                        <option value="">Select your country</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Korea">Korea</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <p id="error8"></p>
+                </div>
+            </div>
+            
+            <!-- submit button -->
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- Link to External JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
